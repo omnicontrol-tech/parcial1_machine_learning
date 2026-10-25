@@ -3,6 +3,7 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.app_logo import add_logo
 from utilities import load_css, st_image
 from PIL import Image
+import pandas as pd
 
 ###### Page configuration
 st.set_page_config(page_title='Streamlit Course Kit', layout='wide', page_icon='📦')
