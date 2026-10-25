@@ -16,10 +16,4 @@ st.sidebar.markdown('''
 This **Streamlit Course Kit** is a collection of educational resources for helping you get started in using, teaching and creating content about [Streamlit](https://streamlit.io/).
 ''')
 
-##### App templates
-colored_header(
-  label='App templates',
-  description='Here are templates for building single page and multi-page Streamlit apps.',
-  color_name='light-blue-70',
-)
 
