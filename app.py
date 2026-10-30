@@ -149,7 +149,7 @@ def predecir(m, nombre_modelo, valores: dict) -> float:
 data = cargar_datos()
 m = preparar_modelos()
 modelos_disponibles = list(m["predictores"].keys())
-st.info("Profesor Andres Felipe Escobar")
+st.info("Terea No.1 - ML - Profesor Andres Felipe Escobar- Integrante: Walter Adolfo Arredondo Paternina")
 st.title("🧱 Resistencia a la compresión del concreto")
 st.caption(
     "Estimación con modelos entrenados sobre el dataset Concrete Compressive "
