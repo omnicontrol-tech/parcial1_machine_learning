@@ -149,7 +149,7 @@ def predecir(m, nombre_modelo, valores: dict) -> float:
 data = cargar_datos()
 m = preparar_modelos()
 modelos_disponibles = list(m["predictores"].keys())
-
+st.info("Profesor Andres Felipe Escobar")
 st.title("🧱 Resistencia a la compresión del concreto")
 st.caption(
     "Estimación con modelos entrenados sobre el dataset Concrete Compressive "
@@ -187,10 +187,11 @@ with tab_pred:
     st.markdown(f"Modelo seleccionado: **{modelo_elegido}**")
     c1, c2, c3 = st.columns(3)
     c1.metric("Resistencia estimada", f"{resistencia:.1f} MPa")
+    maximo = data[TARGET].max()
     c2.metric(
-        "Promedio del dataset",
-        f"{data[TARGET].mean():.1f} MPa",
-        delta=f"{resistencia - data[TARGET].mean():+.1f} MPa",
+        "Máximo del dataset",
+        f"{maximo:.1f} MPa",
+        delta=f"{resistencia - maximo:+.1f} MPa",
     )
     c3.metric("Error típico del modelo (MAE)", f"± {metr['MAE']:.1f} MPa")
 
